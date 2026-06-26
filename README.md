@@ -1,13 +1,15 @@
-# Quiz Application (Full-Stack)
+# Quiz Application (Full-Stack MERN)
 
-A full-stack quiz web application built using Node.js/Express for the backend and React/Vite for the frontend.
+A full-stack quiz web application built using the MERN stack architecture.
 
 ## 🛠️ Tech Stack & Architecture
+- **Database:** MongoDB
 - **Backend:** Node.js, Express.js
 - **Frontend:** React.js, Vite, Tailwind CSS
-- **Database/Features:** RESTful API, User Authentication (Login system completed)
+- **Features:** RESTful API, User Authentication (Login system completed)
 
 ## 📌 Project Status
+- [x] Database Configuration & Models (MongoDB)
 - [x] Backend API Setup & Routing
-- [x] Database & Authentication Middleware (Login feature completed)
+- [x] Authentication Middleware (Login feature completed)
 - [/] Frontend UI/UX Integration (Home and quiz mechanics under development)
