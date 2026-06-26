@@ -4,6 +4,8 @@ import { PORT, NODE_ENV } from './config/env.js';
 import connectDB from './database/mongodb.js';
 import userRouter from './routes/user.routes.js';
 import quizRouter from './routes/quiz.routes.js';
+import levelRouter from './routes/level.routes.js';
+import questionRouter from './routes/question.routes.js';
 const app = express();
 
 //MIDDLEWARE
@@ -14,6 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 //ROUTES
 app.use('/api/auth', userRouter);
 app.use('/api/quiz', quizRouter);
+app.use('/api/levels', levelRouter);
+app.use('/api/question', questionRouter);
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });

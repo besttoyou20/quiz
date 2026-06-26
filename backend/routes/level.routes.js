@@ -1,5 +1,5 @@
 import express from 'express';
-import {getLevelsByQuizId, getLevelById, createLevel, updateLevel, deleteLevel} from '../controller/level.controller.js';
+import {getLevelsByQuizId, createLevel, updateLevel, deleteLevel} from '../controller/level.controller.js';
 import { authMiddleware } from '../middleware/auth.middleware.js';
 
 const levelRouter = express.Router();

@@ -20,13 +20,12 @@ const userSchema = new mongoose.Schema({
     roles: {
         type: String,
         enum: ['user', 'admin'],
-        required: true,
         default: 'user',
     },
     currentLevel: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Level',
-        required: true
+        default: null,
     },
     totalScore: {
         type: Number,
